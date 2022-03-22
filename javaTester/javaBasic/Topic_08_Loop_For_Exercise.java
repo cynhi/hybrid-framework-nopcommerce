@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import org.testng.annotations.Test;
 
-public class Topic_08_Loop_Exercise { 
+public class Topic_08_Loop_For_Exercise { 
 	Scanner scanner = new Scanner(System.in);
 	
 	 @Test

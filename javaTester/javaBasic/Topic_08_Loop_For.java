@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import org.testng.annotations.Test;
 
-public class Topic_08_Loop { 
+public class Topic_08_Loop_For { 
 	Scanner scanner = new Scanner(System.in);
 	String[] name = {"a", "b", "c", "d"};
 	
