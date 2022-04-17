@@ -15,10 +15,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
+
 	private long longTimeout = 30;
-	
-	
 	private long shortTimeout = 5;
+	
+	
+	public static BasePage getBasePageObject() {
+		return new BasePage();
+	}
 	
 	//========Browser========
 	public void openPageUrl(WebDriver driver, String pageUrl){
@@ -106,16 +110,16 @@ public class BasePage {
 	}
 	
 	//========Element========
-	public WebElement getWebElement(WebDriver driver, String xpathLocator) {
+	private WebElement getWebElement(WebDriver driver, String xpathLocator) {
 		return driver.findElement(By.xpath(xpathLocator));
 	}
 	
 	
-	public List<WebElement> getWebElements(WebDriver driver, String xpathLocator) {
+	private List<WebElement> getWebElements(WebDriver driver, String xpathLocator) {
 		 return driver.findElements(By.xpath(xpathLocator));
 	}
 	
-	public By getByXpath(WebDriver driver,String xpathLocator) {
+	private By getByXpath(WebDriver driver,String xpathLocator) {
 		return By.xpath(xpathLocator);
 		
 	}
